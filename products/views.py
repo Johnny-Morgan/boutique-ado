@@ -19,7 +19,6 @@ def all_products(request):
 
     if request.GET:
         if 'sort' in request.GET:
-            print(request.GET)
             sortkey = request.GET['sort']
             sort = sortkey
             # to allow case insensitive sorting in the name field
